@@ -1,4 +1,4 @@
-/*
+
 function StartTime() {
     seconds = 0
     segundos = document.getElementById('segundos')
@@ -22,4 +22,3 @@ function StartTime() {
 }
 
 StartTime()
-*/
