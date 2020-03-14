@@ -1,24 +1,46 @@
+const time = document.getElementById('time')
+segundos = document.getElementById('segundos')
+minutos = document.getElementById('minutos')
 
-function StartTime() {
-    seconds = 0
-    segundos = document.getElementById('segundos')
-    minutos = document.getElementById('minutos')
 
-    cronometro = setInterval(() => {
-        seconds++
+class Cronometro{
+    constructor(){
+        this.seconds = 0
+        this.pause = true
+        this.togglePause = this.togglePause.bind(this) 
+        this.AgregarClick()
+    }
 
-        secs = seconds
-        mins = 0
+    AgregarClick(){
+        time.addEventListener('click', this.togglePause, false)
+    }
 
-        while (secs >= 60){
-            mins++
-            secs -= 60
-        }
+    togglePause(){
+        console.log('xd')
+    }
 
-        minutos.innerHTML = (mins<10)? "0" + mins : mins;
-        segundos.innerHTML = (secs<10)? "0" + secs : secs;
+    StartTime() {
+        setInterval(() => {
+            this.seconds++
 
-    }, 1000)
+            var secs = this.seconds
+            var mins = 0
+
+            while (secs >= 60){
+                mins++
+                secs -= 60
+            }
+
+            minutos.innerHTML = (mins<10)? "0" + mins : mins;
+            segundos.innerHTML = (secs<10)? "0" + secs : secs;
+
+        }, 1000)
+    }
 }
 
-StartTime()
+function empezarCronometro(){
+    window.cronometro = new Cronometro()
+}
+
+
+empezarCronometro()
