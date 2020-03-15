@@ -14,30 +14,57 @@
     </header>
     <section class="puntos">
         <section class="player-container">
-            <section class="player-1">
+            <section class="player-1" onclick="puntoUno()">
             <p class="puntos_number"id="cantidad-de-puntos_1">0</p>
             </section>
             <div class="player-ven-pen">
-                <section class="ventajas">
+                <section class="ventajas" onclick="ventajasUno()">
                     <p class="ven_pen_number"id="ventajas_1">0</p>
                 </section>
-                <section class="penalizacion">
+                <section class="penalizacion" onclick="penalizacionesUno()">
                     <p class="ven_pen_number"id="penalizaciones_1">0</p>
                 </section>
             </div>
         </section>
         <section class="player-container">
-            <section class="player-2" id="player-2-pts">
+            <section class="player-2" onclick="puntosDos()">
                 <p class="puntos_number" id="cantidad-de-puntos_2">0</p>
             </section>
             <div class="player-ven-pen">
-                <section class="ventajas">
+                <section class="ventajas" onclick="ventajasDos()">
                     <p class="ven_pen_number"id="ventajas_2">0</p>
                 </section>
-                <section class="penalizacion">
+                <section class="penalizacion" onclick="penalizacionesDos()">
                     <p class="ven_pen_number" id="penalizaciones_2">0</p>
                 </section>
             </div>
-    </section>   
+        </section>   
+        <script src="puntos1.js"></script>
+        <script src="puntos2.js"></script>
+    </section>
+    <section class="menos">
+        <section class="menos1">
+            <section class="menos_pts" onclick="restarPuntosUno()">
+                <p>-</p>
+            </section>
+            <section class="menos_ven" onclick="restarVenUno()">
+                <p>-</p>
+            </section>
+            <section class="menos_pen" onclick="restarPenUno()">
+                <p>-</p>
+            </section>
+        </section>
+        <section class="menos2">
+            <section class="menos_pts" onclick="restarPuntosDos()">
+                <p>-</p>
+            </section>
+            <section class="menos_ven"onclick="restarVenDos()">
+                <p>-</p>
+            </section>
+            <section class="menos_pen"onclick="restarPenDos()">
+                <p>-</p>
+            </section>
+        </section>
+    </section>
 </body>
 </html>

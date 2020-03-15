@@ -30,7 +30,6 @@
             minutos.innerHTML = (mins<10)? "0" + mins : mins;
             segundos.innerHTML = (secs<10)? "0" + secs : secs;
         }
-
     }, 1000)
 
 
