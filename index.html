@@ -14,30 +14,78 @@
     </header>
     <section class="puntos">
         <section class="player-container">
-            <section class="player-1">
+            <section></section>
+            <section class="player-1" onclick="restarPuntosUno()">
             <p class="puntos_number"id="cantidad-de-puntos_1">0</p>
             </section>
             <div class="player-ven-pen">
-                <section class="ventajas">
+                <section class="ventajas" onclick="restarVenUno()">
                     <p class="ven_pen_number"id="ventajas_1">0</p>
                 </section>
-                <section class="penalizacion">
+                <section class="penalizacion" onclick="restarPenUno()">
                     <p class="ven_pen_number"id="penalizaciones_1">0</p>
                 </section>
             </div>
         </section>
         <section class="player-container">
-            <section class="player-2" id="player-2-pts">
+            <section class="player-2" onclick="restarPuntosDos()">
                 <p class="puntos_number" id="cantidad-de-puntos_2">0</p>
             </section>
             <div class="player-ven-pen">
-                <section class="ventajas">
+                <section class="ventajas" onclick=restarVenDos() >
                     <p class="ven_pen_number"id="ventajas_2">0</p>
                 </section>
-                <section class="penalizacion">
+                <section class="penalizacion" onclick="restarPenDos()" >
                     <p class="ven_pen_number" id="penalizaciones_2">0</p>
                 </section>
             </div>
-    </section>   
+        </section>   
+        <script src="puntos1.js"></script>
+        <script src="puntos2.js"></script>
+    </section>
+    <section class="menos">
+        <section class="menos1">
+            <section class="pts">
+                <section class="menos_pts" onclick="SumarDos1()">
+                    <p>2</p>
+                </section>
+                <section class="menos_pts" onclick="SumarTres1()">
+                    <p>3</p>
+                </section>
+                <section class="menos_pts" onclick="SumarCuatro1()">
+                    <p>4</p>
+                </section>
+            </section>
+            <div class="menos-ven-pen">
+                <section class="menos_ven" onclick="ventajasUno()">
+                    <p>V</p>
+                </section>
+                <section class="menos_pen" onclick="penalizacionesUno()">
+                    <p>N</p>
+                </section>
+            </div>
+        </section>
+        <section class="menos2">
+            <section class="pts">
+                <section class="menos_pts" onclick="SumarDos2()">
+                    <p>2</p>
+                </section>
+                <section class="menos_pts" onclick="SumarTres2()">
+                    <p>3</p>
+                </section>
+                <section class="menos_pts" onclick="SumarCuatro2()">
+                    <p>4</p>
+                </section>
+            </section>
+            <div class="menos-ven-pen">
+                <section class="menos_ven" onclick="ventajasDos()">
+                    <p>V</p>
+                </section>
+                <section class="menos_pen" onclick="penalizacionesDos()">
+                    <p>N</p>
+                </section>
+            </div>
+        </section>
+    </section>
 </body>
 </html>
