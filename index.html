@@ -9,7 +9,11 @@
 </head>
 <body>
     <header>
+        <audio id="audio" controls>
+            <source type="audio/wav" src="audio.wav">
+        </audio>
         <p class='time' onclick="togglePause()"><span id="minutos">00</span>:<span id="segundos">00</span></p>
+        <h1 class='resultados' id='resultados' onclick="MostrarResultados()">Mostrar resultados</h1>
         <script src='temporizador.js'></script>
     </header>
     <section class="puntos">
@@ -43,16 +47,16 @@
         <script src="puntos1.js"></script>
         <script src="puntos2.js"></script>
     </section>
-    <section class="menos">
-        <section class="menos1">
+    <section class="sumas">
+        <section class="sumas1">
             <section class="pts">
-                <section class="menos_pts" onclick="SumarDos1()">
+                <section class="menos_pts_1" onclick="SumarDos1()">
                     <p>2</p>
                 </section>
-                <section class="menos_pts" onclick="SumarTres1()">
+                <section class="menos_pts_1" onclick="SumarTres1()">
                     <p>3</p>
                 </section>
-                <section class="menos_pts" onclick="SumarCuatro1()">
+                <section class="menos_pts_1" onclick="SumarCuatro1()">
                     <p>4</p>
                 </section>
             </section>
@@ -61,19 +65,19 @@
                     <p>V</p>
                 </section>
                 <section class="menos_pen" onclick="penalizacionesUno()">
-                    <p>N</p>
+                    <p>P</p>
                 </section>
             </div>
         </section>
-        <section class="menos2">
+        <section class="sumas2">
             <section class="pts">
-                <section class="menos_pts" onclick="SumarDos2()">
+                <section class="menos_pts_2" onclick="SumarDos2()">
                     <p>2</p>
                 </section>
-                <section class="menos_pts" onclick="SumarTres2()">
+                <section class="menos_pts_2" onclick="SumarTres2()">
                     <p>3</p>
                 </section>
-                <section class="menos_pts" onclick="SumarCuatro2()">
+                <section class="menos_pts_2" onclick="SumarCuatro2()">
                     <p>4</p>
                 </section>
             </section>
@@ -82,7 +86,7 @@
                     <p>V</p>
                 </section>
                 <section class="menos_pen" onclick="penalizacionesDos()">
-                    <p>N</p>
+                    <p>P</p>
                 </section>
             </div>
         </section>
