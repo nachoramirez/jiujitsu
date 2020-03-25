@@ -1,7 +1,7 @@
 body{
-    height: 100%;
     font-family: 'Anton', sans-serif;
     background: linear-gradient(black, white);
+    min-height: calc(100vh - 0px);
 }
 
 .resultados{
