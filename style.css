@@ -3,6 +3,15 @@ body{
     background: linear-gradient(black, white);
     min-height: 100vh;
 }
+.top_container{
+    display: flex;
+    justify-content: space-between;
+}
+.restart_logo{
+    align-self: flex-start;
+    height: 40px;
+    width: 40px;
+}
 
 .resultados{
     display: flex;
@@ -137,7 +146,7 @@ body{
     border-radius: 100%;
     width: 50px;
     height: 50px;
-    background-color: green;
+    background-color: rgb(14, 177, 14);
 }
 
 .menos_pen{
