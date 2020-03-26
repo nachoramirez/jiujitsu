@@ -90,3 +90,23 @@ function restarPenUno() {
         Acciones1.push(accion)
     }
 }
+
+function ganoBlanco(){
+    if(puntos_uno > puntos_dos){
+        return 1
+    }else if(puntos_uno == puntos_dos){
+        if(ventajas_uno > ventajas_dos){
+            return 1
+        }else if(ventajas_uno == ventajas_dos){
+            if(penalizaciones_uno > penalizaciones_dos){
+                return 1
+            }else if(penalizaciones_uno == penalizaciones_dos){
+                return 2
+            }else{
+                return 0
+            }
+        }else{
+            return 0
+        }
+    }else return 0
+}

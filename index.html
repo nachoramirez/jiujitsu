@@ -17,10 +17,12 @@
         <section class="top_container">
             <img class="restart_logo"src="./restart.png" onclick="location.reload()">
             <p class='time' onclick="togglePause()"><span id="minutos">00</span>:<span id="segundos">00</span></p>
-            <img class="restart_logo"src="./informacion.png">
+            <img class="restart_logo"src="./informacion.png" onclick="info()">
         </section>
-        
-        <h1 class='resultados' id='resultados' onclick="MostrarResultados()">Mostrar resultados</h1>
+        <section class='resultados' id="resultados">
+            <h1 class='resultados1' onclick="MostrarResultados1()">Mostrar resultados</h1>
+            <h1 class='resultados2' onclick="MostrarResultados2()">Mostrar resultados</h1>
+        </section>
         <script src='temporizador.js'></script>
     </header>
     <section class="puntos">
