@@ -9,6 +9,7 @@ verificador = false
 seconds = 0
 user_time = 0
 
+
 async function userInput() {
     const { value: time } = await Swal.fire({
         title: 'tiempo de lucha',
@@ -17,12 +18,17 @@ async function userInput() {
         showLoaderOnConfirm: true,
         allowOutsideClick: false,
     })
-
-    if (time) {
-        user_time = `${time}`
-    }
+    const newtime = await verificar(time)
+    user_time = newtime  
 }
 
+function verificar(value){
+    if(value === null || value === ""){
+        return 5
+    }else{
+        return value
+    }
+}
 
 function togglePause() {
     if (!started) {
@@ -47,9 +53,9 @@ setInterval(() => {
         secs = seconds
         var mins = 0
 
-        while (secs >= 60) {
+        while (secs >= 6) {
             mins++
-            secs -= 60
+            secs -= 6
         }
 
         minutos.innerHTML = (mins < 10) ? "0" + mins : mins;
