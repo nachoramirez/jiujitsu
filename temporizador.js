@@ -53,9 +53,9 @@ setInterval(() => {
         secs = seconds
         var mins = 0
 
-        while (secs >= 6) {
+        while (secs >= 60) {
             mins++
-            secs -= 6
+            secs -= 60
         }
 
         minutos.innerHTML = (mins < 10) ? "0" + mins : mins;
